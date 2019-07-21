@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<ul>
+  <li class="box" *ngFor="let produto of produtos | async">
+    <h1>{{produto?.codigoBarras}}</h1>
+    <h2>{{produto?.nome}}</h2>
+    <h3>{{produto?.preco}}</h3>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
